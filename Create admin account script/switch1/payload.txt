@@ -1,6 +1,6 @@
-# Title:          Wifi Password Stealer
-# Description:    steals wifi passwords via powershell
-# Author:         Blue Cosmo
+# Title:          Creating admin account
+# Description:    Creating backdoor admin account
+# Author:         Brand1n0
 # Category:       credentials
 # Target:         Windows 10
 # Attackmodes:    HID, STORAGE
