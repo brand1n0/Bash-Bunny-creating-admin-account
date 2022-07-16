@@ -1,5 +1,5 @@
 REM bashbunny creating backdoor accounts
-REM created by : brandon chambers
+REM created by : brand1n0, https://github.com/brand1n0
 
 REM open powershell
 GUI r
